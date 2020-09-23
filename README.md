@@ -1,5 +1,5 @@
 ### Hi there 👋
-###🔭 I’m currently working on a web development company that serves small businesses. 
+ 🔭 I’m currently working on a web development company that serves small businesses. 
  🌱 I’m currently learning angularJS.
  💬 Ask me about Montessori education.
  📫 How to reach me: zayehalo@gmail.com
