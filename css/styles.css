@@ -1,144 +1,81 @@
-/********** Base styles **********/
-* {
-  box-sizing: border-box;
-  font-family: Avenir, Arial, Helvetica;
-  margin: 0;
-  padding: 0;
+body {
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #333333;
+  font-family: 'Nunito Sans', sans-serif;
+  text-align: center;
+}
+.color-y {color: #fade2d;}
+.color-p {color: #de2dfa;}
+.color-t {color: #27dbc2;}
+.color-w {color: #ffffff;}
+.color-dg {color: #6d7473;}
+.color-lg {color: #8f9c9a;}
+/** HEADER **/
+#header-nav {
+  background-color: #333333;
+  border-radius: 0;
+  border: 0;
 }
 
 h1 {
-  margin-bottom: 15px;
+  font-size: 64px;
   text-align: center;
-  font-size: 1.75em;
-  color: white;
-  text-shadow: #fade2d;
+  color: black;
+  background: #333333;
+  text-shadow: #fade2d 0px 0px 5px, #fade2d 0px 0px 10px, #fade2d 0px 0px 15px, 
+  #de2dfa 0px 0px 20px, #de2dfa 0px 0px 30px, #de2dfa 0px 0px 40px, 
+  #de2dfa 0px 0px 50px, #de2dfa 0px 0px 75px;
+  }
+
+
+#logo-img {
+  background: url('../images/zayehalo-logo-inch.png') no-repeat;
+  width: 72px;
+  height: 72px;
+  margin: 10px 15px 10px 0;
 }
 
-h2 {
-  margin-bottom: 10px;
-  text-align: left;
-  font-size: 1.37em;
+#logo-square-img {
+  background: url('../images/zayehalo-wordmark-square-inch.png') no-repeat;
+  width: 72px;
+  height: 72px;
+  margin: 10px 15px 10px 0;
 }
 
-body {
-  background: #454545;
-  margin: 10px;
-  font-size: 1em;
+#company-name-img { 
+  background: url('../images/zayehalo-wordmark-rectangle-72x219.png') no-repeat;
+  width: 219px;
+  height: 72px;
+  margin: 10px 15px 10px 0;
+ }
+
+
+/* END HEADER */
+
+/* FOOTER */
+.panel-footer {
+  margin-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: #333333;
+  border-top: 0;
 }
-
-p {
-  color: white;
-  font-size: 1em;
-  padding: 5px;
+.panel-footer div.row {
+  margin-bottom: 35px;
 }
-
-#box {
-  border: 1px #999999;
-  background-color: #454545;
-  margin:10px;
-  position: relative;
-}
-
-/* Color Pallete */
-
-.gold {color: #fade2d;}
-.purple {color: #de2dfa;}
-.teal {color: #27dbc2;}
-.white {color: #ffffff;}
-.darkgrey {color: #6d7473;}
-.lightgrey {color: #8f9c9a;}
+/* END FOOTER */
 
 
-/* Simple Responsive Framework. */
-.row {
-  width: 100%; 
-}
 
-/********** Large devices only **********/
-@media (min-width: 1200px) {
-  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
-    float: left; 
-  }
-  .col-lg-1 {
-    width: 8.33%;
-  }
-  .col-lg-2 {
-    width: 16.66%;
-  }
-  .col-lg-3 {
-    width: 25%;
-  }
-  .col-lg-4 {
-    width: 33.33%;
-  }
-  .col-lg-5 {
-    width: 41.66%;
-  }
-  .col-lg-6 {
-    width: 50%;
-  }
-  .col-lg-7 {
-    width: 58.33%;
-  }
-  .col-lg-8 {
-    width: 66.66%;
-  }
-  .col-lg-9 {
-    width: 74.99%;
-  }
-  .col-lg-10 {
-    width: 83.33%;
-  }
-  .col-lg-11 {
-    width: 91.66%;
-  }
-  .col-lg-12 {
-    width: 100%;
-  }
-}
+/* HOME PAGE */
 
-/********** Medium devices only **********/
-@media (min-width: 992px) and (max-width: 1199px) {
-  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
-    float: left; 
-  }
-  .col-md-1 {
-    width: 8.33%;
-  }
-  .col-md-2 {
-    width: 16.66%;
-  }
-  .col-md-3 {
-    width: 25%;
-  }
-  .col-md-4 {
-    width: 33.33%;
-  }
-  .col-md-5 {
-    width: 41.66%;
-  }
-  .col-md-6 {
-    width: 50%;
-  }
-  .col-md-7 {
-    width: 58.33%;
-  }
-  .col-md-8 {
-    width: 66.66%;
-  }
-  .col-md-9 {
-    width: 74.99%;
-  }
-  .col-md-10 {
-    width: 83.33%;
-  }
-  .col-md-11 {
-    width: 91.66%;
-  }
-  .col-md-12 {
-    width: 100%;
-  }
-}
+/* END HOME PAGE */
+
+
+
+
+
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
@@ -152,28 +89,20 @@ p {
 @media (min-width: 992px) and (max-width: 1199px) {
   /* Header */
   #logo-img {
-    background: url('../images/restaurant-logo_medium.png') no-repeat;
-    width: 100px;
-    height: 100px;
-    margin: 5px 5px 5px 0;
+    background: url('../images/zayehalo-logo-inch.png') no-repeat;
+
   }
   /* End Header */
 
   /* Home Page */
-  .container .jumbotron {
-    background: url('../images/jumbotron_992.jpg') no-repeat;
-    height: 558px;
-  }
+  
   /* End Home Page */
 }
 
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
   /* Home Page */
-  .container .jumbotron {
-    background: url('../images/jumbotron_768.jpg') no-repeat;
-    height: 432px;
-  }
+  
   /* End Home Page */
 }
 
@@ -264,7 +193,7 @@ p {
     font-size: 6vw;
   }
   /* End Header */
-
+  
   /* Home page */
   #menu-tile, #specials-tile {
     width: 280px;
@@ -280,3 +209,6 @@ p {
     width: 100%;
   }
 }
+
+
+
