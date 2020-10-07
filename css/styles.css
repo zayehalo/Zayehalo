@@ -1,5 +1,5 @@
 body {
-  font-size: 16px;
+  font-size: 1.25e;
   color: #ffffff;
   background-color: #333333;
   font-family: 'Nunito Sans', sans-serif;
@@ -12,14 +12,10 @@ body {
 .color-dg {color: #6d7473;}
 .color-lg {color: #8f9c9a;}
 /** HEADER **/
-#header-nav {
-  background-color: #333333;
-  border-radius: 0;
-  border: 0;
-}
+
 
 h1 {
-  font-size: 64px;
+  font-size: 10vw;
   text-align: center;
   color: black;
   background: #333333;
@@ -29,27 +25,22 @@ h1 {
   }
 
 
-#logo-img {
-  background: url('../images/zayehalo-logo-inch.png') no-repeat;
-  width: 72px;
-  height: 72px;
-  margin: 10px 15px 10px 0;
+.navbar-brand {
+    
+    color: black;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 3vw;
+    text-shadow: #ffffff 0px 0px 5px;
+  }
+
+
+.navbar-brand img {
+    display: inline;
+    margin: 0px 10px 0px 0px;
 }
-
-#logo-square-img {
-  background: url('../images/zayehalo-wordmark-square-inch.png') no-repeat;
-  width: 72px;
-  height: 72px;
-  margin: 10px 15px 10px 0;
+nav.navbar {
+  min-height: 90px;
 }
-
-#company-name-img { 
-  background: url('../images/zayehalo-wordmark-rectangle-72x219.png') no-repeat;
-  width: 219px;
-  height: 72px;
-  margin: 10px 15px 10px 0;
- }
-
 
 /* END HEADER */
 
@@ -63,6 +54,7 @@ h1 {
 }
 .panel-footer div.row {
   margin-bottom: 35px;
+  margin-top: 15px;
 }
 /* END FOOTER */
 
@@ -79,19 +71,13 @@ h1 {
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
-  .container .jumbotron {
-    background: url('../images/jumbotron_1200.jpg') no-repeat;
-    height: 675px;
-  }
+  
 }
 
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
   /* Header */
-  #logo-img {
-    background: url('../images/zayehalo-logo-inch.png') no-repeat;
-
-  }
+  
   /* End Header */
 
   /* Home Page */
@@ -109,45 +95,9 @@ h1 {
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
   /* Header */
-  .navbar-brand {
-    padding-top: 10px;
-    height: 80px;
-  }
-  .navbar-brand h1 { /* Restaurant name */
-    padding-top: 10px;
-    font-size: 5vw; /* 1vw = 1% of viewport width */
-  }
-  .navbar-brand p { /* Kosher cert */
-    font-size: .6em;
-    margin-top: 12px;
-  }
-  .navbar-brand p img { /* Star-K */
-    height: 20px;
-  }
+  
 
-  #collapsable-nav a { /* Collapsed nav menu text */
-    font-size: 1.2em;
-  }
-  #collapsable-nav a span { /* Collapsed nav menu glyph */
-    font-size: 1em;
-    margin-right: 5px;
-  }
-
-  #call-btn > a {
-    font-size: 1.5em;
-    display: block;
-    margin: 0 20px;
-    padding: 10px;
-    border: 2px solid #fff;
-    background-color: #f6b319;
-    color: #951c49;
-  }
-  #xs-deliver {
-    margin-top: 5px;
-    font-size: .7em;
-    letter-spacing: .1em;
-    text-transform: uppercase;
-  }
+  
   /* End Header */
 
   /* Footer */
@@ -164,42 +114,15 @@ h1 {
   /* End Footer */
 
   /* Home Page */
-  .container .jumbotron {
-    margin-top: 30px;
-    padding: 0;
-  }
-  #menu-tile, #specials-tile {
-    width: 360px;
-    margin: 0 auto 15px;
-  }
-
-  .menu-item-photo {
-    margin-right: auto;
-  }
-  .menu-item-tile .menu-item-price {
-    text-align: center;
-  }
-  .menu-item-description {
-    text-align: center;;
-  }
-}
-
-
+  
 /********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
 @media (max-width: 479px) {
   /* Header */
-  .navbar-brand h1 { /* Restaurant name */
-    padding-top: 5px;
-    font-size: 6vw;
-  }
+  
   /* End Header */
   
   /* Home page */
-  #menu-tile, #specials-tile {
-    width: 280px;
-    margin: 0 auto 15px;
-  }
-
+ 
   .col-xxs-12 {
     position: relative;
     min-height: 1px;
