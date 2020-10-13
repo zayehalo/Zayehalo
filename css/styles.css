@@ -21,7 +21,7 @@ body {
     z-index: 1000;
     display: flex;
     background: #333333;*/
-    border-bottom: 1px solid #de2dfa;
+    border-bottom: 1px solid #8f9c9a;
     /*-webkit-animation: none;
     animation: none;*/
 }
@@ -43,19 +43,19 @@ nav.navbar {
 .navbar .navbar-brand img {
     margin: 0px;
     padding: 0px 0px 0px 0px;
-    background-image: radial-gradient(closest-side,#ffffff, #fade2d 65% , #de2dfa,  #333333);
+    background-image: radial-gradient(closest-side,#ffffff, #fade2d 65% , #27dbc2,  #333333);
 }
 
 /* END HEADER */
 
 h1 {
-  font-size: 8vw;
+  font-size: 6vw;
   text-align: center;
   color: black;
   background: #333333;
   text-shadow: #fade2d 0px 0px 5px, #fade2d 0px 0px 10px, #fade2d 0px 0px 15px, 
-  #de2dfa 0px 0px 20px, #de2dfa 0px 0px 30px, #de2dfa 0px 0px 40px, 
-  #de2dfa 0px 0px 50px, #de2dfa 0px 0px 75px;
+  #27dbc2 0px 0px 20px, #27dbc2 0px 0px 30px, #27dbc2 0px 0px 40px, 
+  #27dbc2 0px 0px 50px, #27dbc2 0px 0px 75px;
   padding-top: 7vw;
   padding-bottom: 5vw;
 }
@@ -69,7 +69,7 @@ footer {
   margin-top: 30px;
   padding-top: 35px;
   padding-bottom: 5px;
-  background-image: -webkit-linear-gradient(  #333333 50%, #de2dfa,#fade2d,#de2dfa, #333333);
+  background-image: -webkit-linear-gradient(  #333333, #27dbc2,#fade2d,#27dbc2, #333333);
   /*position: sticky-bottom;*/
   color: #fade2d;
   font-family: 'Nunito Sans', sans-serif;
