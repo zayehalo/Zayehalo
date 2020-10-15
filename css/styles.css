@@ -80,6 +80,11 @@ header img .goog-te-gadget{
   font-family: 'Nunito Sans', sans-serif;
   font-size: .75em;
   text-align: center;
+  
+}
+
+#google_translate_element {
+  -webkit-appearance: button-bevel;
 }
 
 .goog-te-banner {
@@ -88,6 +93,9 @@ header img .goog-te-gadget{
     overflow: hidden;
 }
 
+.goog-te-banner  {
+  
+}
 
 header .navbar{ 
   background-color: #333333;
