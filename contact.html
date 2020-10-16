@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-US">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,16 +27,16 @@
   <!--social media sidebar-->
   <div class="sticky-container">
     <ul class="sticky">
-        <li><a href="https://twitter.com/zayehalo" target="_blank">
-            <img src="images/twitter-circle.png" width="32" height="32">
+        <li>
+            <img src="images/twitter-circle.png" width="32" height="32"><a href="https://twitter.com/zayehalo" target="_blank">
             <p>Follow Us on<br>Twitter</p></a>
         </li>
-        <li><a href="https://www.linkedin.com/in/crystal-dennis-582572171/" target="_blank">
-            <img src="images/linkedin-circle.png" width="32" height="32">
+        <li>
+            <img src="images/linkedin-circle.png" width="32" height="32"><a href="https://www.linkedin.com/in/crystal-dennis-582572171/" target="_blank">
             <p>Follow Us on<br>LinkedIn</p></a>
         </li>
     </ul>
-  </div>
+</div>
 <!--end social sidebar-->
 
 
@@ -61,10 +61,10 @@
           
           <div class="collapse navbar-collapse justify-content-around" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link active" href="#">About<span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="about.html">About</a>
               <a class="nav-link" href="#">Website Services</a>
               <a class="nav-link" href="#">Blog</a>
-              <a class="nav-link" href="contact.html">Contact</a>
+              <a class="nav-link active" href="contact.html">Contact<span class="sr-only">(current)</span></a>
             </div>
           </div>
         </nav>
@@ -72,26 +72,84 @@
     </div>
   </header>
 
-<div id="main-content" class="container">
-  <!-- <div class="d-flex flex-row bd-highlight mb-3 float-md-left"> -->
-  <div class = "row-full" id="first-row"><h1></h1></div>
-  <div class="d-flex flex-row bd-highlight mb-3 float-md-left">
-    <div class ="col"></div>
-    <div class="col-9">
-      <div class="d-flex flex-row bd-highlight mb-3 float-md-left">
-        <div class="col-9 p-2 bd-highlight">
-          <img src="images/IMG_5892.jpeg" class="img-fluid img-thumbnail" alt="photo of me playing the ukelele"></div>
-        <div class="col p-2 bd-highlight">
-          <h5>Who am I?</h5>
-          I am a mom, mathematician, amateur musician, nature lover, and detail-oriented coder--with a passion for elegance.
-        </div>
-      </div>
-    </div>
-    <div class="col"></div>    
-  </div>
-    <div class = "row-full"><h1>Knowledge is power.</h1></div><!-- </div> -->      
-</div> <!-- end main content container -->
+  <div id="main-content" class="container">
+    
+    <div class="row" id="first-row"><h1></h1></div>
+    <div class="row-full">
 
+      <form class="form-horizontal" role="form" method="post" action="index.php">
+        <div class="form-group">
+          <label for="name" class="col-sm-2 control-label">Name</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email" class="col-sm-2 control-label">Email</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="message" class="col-sm-2 control-label">Message</label>
+          <div class="col-sm-10">
+            <textarea class="form-control" rows="4" name="message"></textarea>
+          </div>
+          <?php echo "<p class='text-danger'>$errName</p>";?>
+        </div>
+        <div class="form-group">
+          <label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-10 col-sm-offset-2">
+            <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-10 col-sm-offset-2">
+            <! Will be used to display an alert to the user>
+          </div>
+        </div>
+      </form>
+
+      <?php 
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $message = $_POST['message'];
+        $human = intval($_POST['human']);
+
+        $from = 'Demo Contact Form'; 
+        $to = 'example@domain.com'; 
+        $subject = 'Message from Contact Demo ';
+         
+        $body = "From: $name\n E-Mail: $email\n Message:\n $message";
+
+        if (!$_POST['name']) {
+          $errName = 'Please enter your name';
+        }
+
+        if (!$_POST['email'] || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+          $errEmail = 'Please enter a valid email address';
+        }
+
+        if ($human !== 5) {
+          $errHuman = 'Your anti-spam is incorrect';
+        }
+      ?>
+
+    </div>
+    <div class="row-full">
+      <div class = "col-12"><h1>Knowledge is power.</h1></div>
+    </div>
+    <div class="row"><h1></h1></div>
+    <div class="row"><h1></h1></div>
+  </div> 
+  <!-- main content container -->
+
+  <!--  -->
   <div class="container"> <!--bottom navbar --> 
     <nav class="navbar navbar-expand-lg navbar-dark .bg-transparent justify-content-center">  
       <div class="navbar-nav">
@@ -100,21 +158,21 @@
         <a class="nav-link" href="#">Data Visualization</a>
       </div>
     </nav> 
-  </div><!--navbar bottom-->
+  </div>
 
-  <footer>
+    <footer>
     <div class="container">
         
       <div class="row">
         <a href="index.html">
-          <img class="d-inline-block img-fluid align-top " src="../images/zayehalo-wordmark-rectangle.png" alt = "" >
+          <img class="d-inline-block align-top" src="../images/zayehalo-wordmark-square-inch.png" alt = "" >
         </a>
       </div>
 
       <div class="copyright"> &copy; Copyright 2020 ZayeHalo Media Design & Technology 
       </div>
-    </div> <!--footer container-->
-   </footer>
+   </div>
+  </footer>
 
   <!-- jQuery (Bootstrap JS plugins depend on it) -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
